@@ -1,0 +1,15 @@
+plugins {
+    id(Plugins.javaLibrary)
+    id(Plugins.kotlinJVM)
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+dependencies {
+
+    // Inject
+    api(Dependencies.Inject.inject)
+}
